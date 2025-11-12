@@ -2,65 +2,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* ============================================
-   SMARTFRIDGE DESIGN SYSTEM
-   Based on FoodWise reference design
-   Primary: Emerald Green (#10B981)
+   FRESHTRACK DESIGN SYSTEM
+   AI-Powered Food Waste Solution
+   Primary: Dark Green (#008000)
+   Secondary: Lime Green (#7CB342)
+   Accent: Light Green (#A5D6A7)
    ============================================ */
 
 :root {
-  /* Background: Light gray for page background */
-  --background: 210 20% 98%; /* #F9FAFB */
-  --foreground: 217 33% 12%; /* #111827 - Dark gray/black for text */
+  /* Background: Clean white for modern feel */
+  --background: 0 0% 100%; /* #FFFFFF */
+  --foreground: 0 0% 9%; /* #171717 - Near black for text */
 
   /* Cards: Pure white with subtle shadows */
   --card: 0 0% 100%; /* #FFFFFF */
-  --card-foreground: 217 33% 12%; /* #111827 */
+  --card-foreground: 0 0% 9%; /* #171717 */
 
   /* Popovers with white background */
   --popover: 0 0% 100%;
-  --popover-foreground: 217 33% 12%;
+  --popover-foreground: 0 0% 9%;
 
-  /* Primary: Emerald Green (FoodWise brand color) */
-  --primary: 160 84% 39%; /* #10B981 */
+  /* Primary: Dark Green (FreshTRACK brand color) */
+  --primary: 120 100% 25%; /* #008000 - Dark Green */
   --primary-foreground: 0 0% 100%; /* White text on green */
 
-  /* Secondary: Light gray background */
-  --secondary: 220 13% 91%; /* #E5E7EB */
-  --secondary-foreground: 217 33% 12%;
+  /* Secondary: Lime Green */
+  --secondary: 88 50% 53%; /* #7CB342 - Lime Green */
+  --secondary-foreground: 0 0% 100%;
 
-  /* Muted: Subtle gray with medium gray text */
-  --muted: 210 20% 98%;
-  --muted-foreground: 217 13% 46%; /* #6B7280 */
+  /* Muted: Light gray with medium gray text */
+  --muted: 0 0% 96%;
+  --muted-foreground: 0 0% 45%; /* #737373 */
 
-  /* Accent: Emerald green for highlights */
-  --accent: 160 84% 39%; /* #10B981 */
-  --accent-foreground: 0 0% 100%;
+  /* Accent: Light Green for highlights */
+  --accent: 130 40% 75%; /* #A5D6A7 - Light Green */
+  --accent-foreground: 0 0% 9%;
+
+  /* Success: Green for positive actions */
+  --success: 120 100% 25%; /* #008000 */
+  --success-foreground: 0 0% 100%;
 
   /* Warning: Amber for expiration alerts */
-  --warning: 36 100% 50%; /* #FF9800 */
+  --warning: 38 92% 50%; /* #FF9800 */
   --warning-foreground: 0 0% 100%;
 
   /* Destructive: Red for urgent alerts */
-  --destructive: 4 90% 58%; /* #F44336 */
+  --destructive: 0 72% 51%; /* #DC2626 */
   --destructive-foreground: 0 0% 100%;
 
   /* Borders: Subtle gray */
-  --border: 220 13% 91%; /* #E5E7EB */
-  --input: 220 13% 91%;
-  --ring: 160 84% 39%; /* Green focus ring */
+  --border: 0 0% 89%; /* #E3E3E3 */
+  --input: 0 0% 89%;
+  --ring: 120 100% 25%; /* Dark Green focus ring */
 
   /* Border Radius: Rounded corners matching design */
   --radius: 0.75rem; /* 12px for cards */
 
   /* Sidebar: White with green accents */
   --sidebar-background: 0 0% 100%;
-  --sidebar-foreground: 217 33% 12%;
-  --sidebar-primary: 160 84% 39%; /* Green */
+  --sidebar-foreground: 0 0% 9%;
+  --sidebar-primary: 120 100% 25%; /* Dark Green */
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 210 20% 98%;
-  --sidebar-accent-foreground: 217 33% 12%;
-  --sidebar-border: 220 13% 91%;
-  --sidebar-ring: 160 84% 39%;
+  --sidebar-accent: 0 0% 96%;
+  --sidebar-accent-foreground: 0 0% 9%;
+  --sidebar-border: 0 0% 89%;
+  --sidebar-ring: 120 100% 25%;
+
+  /* FreshTRACK Brand Colors (additional) */
+  --freshtrack-dark-green: 120 100% 25%; /* #008000 */
+  --freshtrack-lime-green: 88 50% 53%; /* #7CB342 */
+  --freshtrack-light-green: 130 40% 75%; /* #A5D6A7 */
+  --freshtrack-gray: 0 0% 62%; /* #9E9E9E */
 }
 
 .dark {
