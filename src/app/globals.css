@@ -1,59 +1,66 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* ============================================
+   SMARTFRIDGE DESIGN SYSTEM
+   Based on FoodWise reference design
+   Primary: Emerald Green (#10B981)
+   ============================================ */
 
 :root {
-  /* Pure white background with crisp black text */
-  --background: 0 0% 100%;
-  --foreground: 0 0% 0%;
+  /* Background: Light gray for page background */
+  --background: 210 20% 98%; /* #F9FAFB */
+  --foreground: 217 33% 12%; /* #111827 - Dark gray/black for text */
 
-  /* Clean white cards with black text */
-  --card: 0 0% 100%;
-  --card-foreground: 0 0% 0%;
+  /* Cards: Pure white with subtle shadows */
+  --card: 0 0% 100%; /* #FFFFFF */
+  --card-foreground: 217 33% 12%; /* #111827 */
 
   /* Popovers with white background */
   --popover: 0 0% 100%;
-  --popover-foreground: 0 0% 0%;
+  --popover-foreground: 217 33% 12%;
 
-  /* Primary: Black with white text */
-  --primary: 0 0% 0%;
-  --primary-foreground: 0 0% 100%;
+  /* Primary: Emerald Green (FoodWise brand color) */
+  --primary: 160 84% 39%; /* #10B981 */
+  --primary-foreground: 0 0% 100%; /* White text on green */
 
-  /* Secondary: Light gray background with black text */
-  --secondary: 0 0% 97%;
-  --secondary-foreground: 0 0% 0%;
+  /* Secondary: Light gray background */
+  --secondary: 220 13% 91%; /* #E5E7EB */
+  --secondary-foreground: 217 33% 12%;
 
-  /* Muted: Subtle gray with darker text */
-  --muted: 0 0% 96%;
-  --muted-foreground: 0 0% 40%;
+  /* Muted: Subtle gray with medium gray text */
+  --muted: 210 20% 98%;
+  --muted-foreground: 217 13% 46%; /* #6B7280 */
 
-  /* Accent: Light gray */
-  --accent: 0 0% 96%;
-  --accent-foreground: 0 0% 0%;
+  /* Accent: Emerald green for highlights */
+  --accent: 160 84% 39%; /* #10B981 */
+  --accent-foreground: 0 0% 100%;
 
-  /* Destructive: Clean red */
-  --destructive: 0 70% 50%;
+  /* Warning: Amber for expiration alerts */
+  --warning: 36 100% 50%; /* #FF9800 */
+  --warning-foreground: 0 0% 100%;
+
+  /* Destructive: Red for urgent alerts */
+  --destructive: 4 90% 58%; /* #F44336 */
   --destructive-foreground: 0 0% 100%;
 
   /* Borders: Subtle gray */
-  --border: 0 0% 90%;
-  --input: 0 0% 90%;
-  --ring: 0 0% 0%;
+  --border: 220 13% 91%; /* #E5E7EB */
+  --input: 220 13% 91%;
+  --ring: 160 84% 39%; /* Green focus ring */
 
-  /* Minimal rounded corners */
-  --radius: 0.375rem;
+  /* Border Radius: Rounded corners matching design */
+  --radius: 0.75rem; /* 12px for cards */
 
-  /* Sidebar: Clean white with black text */
+  /* Sidebar: White with green accents */
   --sidebar-background: 0 0% 100%;
-  --sidebar-foreground: 0 0% 0%;
-  --sidebar-primary: 0 0% 0%;
+  --sidebar-foreground: 217 33% 12%;
+  --sidebar-primary: 160 84% 39%; /* Green */
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 0 0% 96%;
-  --sidebar-accent-foreground: 0 0% 0%;
-  --sidebar-border: 0 0% 90%;
-  --sidebar-ring: 0 0% 0%;
+  --sidebar-accent: 210 20% 98%;
+  --sidebar-accent-foreground: 217 33% 12%;
+  --sidebar-border: 220 13% 91%;
+  --sidebar-ring: 160 84% 39%;
 }
 
 .dark {
@@ -168,36 +175,141 @@ All colors MUST be HSL.
   border-color: hsl(var(--border));
 }
 
+/* ============================================
+   TYPOGRAPHY SYSTEM
+   Font: Inter (Google Fonts)
+   ============================================ */
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-color: hsl(var(--background));
   color: hsl(var(--foreground));
   font-feature-settings: "rlig" 1, "calt" 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-size: 1rem;
+  line-height: 1.5;
   text-rendering: optimizeLegibility;
 }
 
-/* Minimal, clean typography */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+/* Heading Typography Scale */
+h1 {
+  font-size: 3rem; /* 48px */
+  font-weight: 700;
   letter-spacing: -0.025em;
+  line-height: 1.2;
   color: hsl(var(--foreground));
+  margin-bottom: 1rem;
 }
 
-/* Clean button styles */
+h2 {
+  font-size: 2.25rem; /* 36px */
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.3;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.875rem;
+}
+
+h3 {
+  font-size: 1.5rem; /* 24px */
+  font-weight: 600;
+  letter-spacing: -0.020em;
+  line-height: 1.4;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.75rem;
+}
+
+h4 {
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 1.5;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.625rem;
+}
+
+h5, h6 {
+  font-size: 1rem; /* 16px */
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.5;
+  color: hsl(var(--foreground));
+  margin-bottom: 0.5rem;
+}
+
+/* Body Text */
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: hsl(var(--muted-foreground));
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  color: hsl(var(--primary));
+  text-decoration: none;
+  transition: color 150ms ease-in-out;
+}
+
+a:hover {
+  color: hsl(160 84% 35%);
+}
+
+/* Button styles */
 button {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   font-weight: 500;
+  transition: all 150ms ease-in-out;
 }
 
-/* Subtle shadows for depth */
+/* Form elements */
+input, select, textarea {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ============================================
+   SHADOWS (FoodWise Design System)
+   ============================================ */
+
 .shadow-sm {
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
 }
 
 .shadow {
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.06);
 }
 
 .shadow-md {
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.06);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -2px rgb(0 0 0 / 0.05);
+}
+
+/* ============================================
+   UTILITY CLASSES
+   ============================================ */
+
+.container-custom {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .container-custom {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

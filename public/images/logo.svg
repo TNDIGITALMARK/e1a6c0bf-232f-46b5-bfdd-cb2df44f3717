@@ -1,0 +1,10 @@
+<svg width="120" height="32" viewBox="0 0 120 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Leaf Icon -->
+  <path d="M12 4C12 4 4 8 4 16C4 20.4183 7.58172 24 12 24C16.4183 24 20 20.4183 20 16C20 8 12 4 12 4Z" fill="#10B981"/>
+  <path d="M12 4C12 4 12 12 12 24" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- FoodWise Text -->
+  <text x="28" y="20" font-family="Inter, system-ui, sans-serif" font-size="16" font-weight="600" fill="#111827">
+    FoodWise
+  </text>
+</svg>
