@@ -19,8 +19,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Elegant Flora Boutique",
-  description: "Beautiful AI-powered website creation platform",
+  title: "FreshTRACK - AI-Powered Food Waste Solution",
+  description: "Smart fridge management system that uses AI to track food freshness, reduce waste, and save money",
 };
 
 export default function RootLayout({
