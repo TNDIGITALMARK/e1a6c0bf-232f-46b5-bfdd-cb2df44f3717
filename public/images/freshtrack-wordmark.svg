@@ -1,0 +1,66 @@
+<svg width="240" height="48" viewBox="0 0 240 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- FreshTRACK Wordmark - Complete logo with icon and text -->
+
+  <!-- Logo Icon -->
+  <g id="icon">
+    <!-- Outer leaf shape - Dark Green -->
+    <path
+      d="M24 6C24 6 10 12 10 24C10 31.732 16.268 38 24 38C31.732 38 38 31.732 38 24C38 12 24 6 24 6Z"
+      fill="#008000"
+    />
+
+    <!-- Leaf vein - central line -->
+    <path
+      d="M24 6L24 38"
+      stroke="#7CB342"
+      stroke-width="2.5"
+      stroke-linecap="round"
+    />
+
+    <!-- Secondary veins -->
+    <path
+      d="M24 14C24 14 28 18 28 24"
+      stroke="#A5D6A7"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      opacity="0.6"
+    />
+    <path
+      d="M24 14C24 14 20 18 20 24"
+      stroke="#A5D6A7"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      opacity="0.6"
+    />
+
+    <!-- Freshness indicator dot -->
+    <circle
+      cx="24"
+      cy="10"
+      r="2"
+      fill="#7CB342"
+    />
+  </g>
+
+  <!-- Text: "Fresh" in Dark Green -->
+  <text
+    x="54"
+    y="32"
+    font-family="Inter, system-ui, -apple-system, sans-serif"
+    font-size="28"
+    font-weight="700"
+    fill="#008000"
+    letter-spacing="-0.02em"
+  >Fresh</text>
+
+  <!-- Text: "TRACK" in Gray -->
+  <text
+    x="140"
+    y="32"
+    font-family="Inter, system-ui, -apple-system, sans-serif"
+    font-size="28"
+    font-weight="700"
+    fill="#9E9E9E"
+    letter-spacing="0.05em"
+  >TRACK</text>
+</svg>
